@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Meu Projeto</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <section class="card">
+            <div class="card-header">
+                <span class="eyebrow">Acesso</span>
+                <h1>Faça login na sua conta</h1>
+                <p>Use seu login e senha para entrar no sistema.</p>
+            </div>
+            <!-- ✅ CORREÇÃO 1: name="username" (era name="login") — alinhado com @RequestParam e findByUsername() -->
+            <!-- ✅ CORREÇÃO 2: removido href="" do <button type="submit"> -->
+            <form action="/login" method="post" class="form-grid">
+                <div class="field-group">
+                    <label for="username">Login</label>
+                    <input type="text" id="username" name="username" placeholder="Digite seu login" required>
+                </div>
+                <div class="field-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit">Entrar</button>
+                    <a class="secondary-button" href="/cadastro">Criar nova conta</a>
+                </div>
+ 

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Gerente - GestãoPro</title>
+    <link rel="stylesheet" href="/css/gerente.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-icon">📊</span>
+                    <h1>GestãoPro</h1>
+                </div>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="#dashboard" class="menu-item active">
+                    <span class="icon">📈</span>
+                    <span class="label">Dashboard</span>
+                </a>
+                <a href="#meus-projetos" class="menu-item">
+                    <span class="icon">📁</span>
+                    <span class="label">Meus Projetos</span>
+                </a>
+                <a href="#tarefas" class="menu-item">
+                    <span class="icon">✅</span>
+                    <span class="label">Tarefas</span>
+                </a>
+                <a href="#relatorios" class="menu-item">
+                    <span class="icon">📊</span>
+                    <span class="label">Relatórios</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#logout" class="menu-item logout">
+                    <span class="icon">🚪</span>
+                    <span class="label">Sair</span>
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="header-content">
+                    <h2>Bem-vindo, Gerente</h2>
+                    <div class="user-info">
+                        <span class="user-avatar">👤</span>
+                        <span class="user-name">Gerente de Projetos</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="dashboard-content">
+                <section class="metrics-grid">
+                    <article class="metric-card">
+                        <div class="metric-icon">📁</div>
+                        <div class="metric-details">
+                            <h3>Meus Projetos</h3>
+                            <span class="metric-value">12</span>
+                        </div>
+                    </article>
+                    <article class="metric-card">
+                        <div class="metric-icon">⏳</div>
+                        <div class="metric-details">
+                            <h3>Tarefas Pendentes</h3>
+                            <span class="metric-value">34</span>
+                        </div>
+                    </article>
+                    <article class="metric-card">
+                        <div class="metric-icon">✅</div>
+                        <div class="metric-details">
+                            <h3>Tarefas Concluídas</h3>
+                            <span class="metric-value">89</span>
+                        </div>
+                    </article>
+                    <article class="metric-card">
+                        <div class="metric-icon">👥</div>
+                        <div class="metric-details">
+                            <h3>Membros na Equipe</h3>
+                            <span class="metric-value">7</span>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="table-section">
+                    <h3>Meus Projetos</h3>
+                    <table class="projects-table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Status</th>
+                                <th>Data de Início</th>
+                                <th>Data de Término</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Portal de Vendas</td>
+                                <td><span class="badge badge-in-progress">Em Andamento</span></td>
+                                <td>10/02/2026</td>
+                                <td>30/06/2026</td>
+                            </tr>
+                            <tr>
+                                <td>Aplicativo Interno</td>
+                                <td><span class="badge badge-planned">Planejado</span></td>
+                                <td>05/05/2026</td>
+                                <td>10/09/2026</td>
+                            </tr>
+                            <tr>
+                                <td>Relatório de Performance</td>
+                                <td><span class="badge badge-completed">Concluído</span></td>
+                                <td>01/01/2026</td>
+                                <td>15/03/2026</td>
+                            </tr>
+                            <tr>
+                                <td>Atualização CRM</td>
+                                <td><span class="badge badge-in-progress">Em Andamento</span></td>
+                                <td>12/03/2026</td>
+                                <td>20/07/2026</td>
+                            </tr>
+                            <tr>
+                                <td>Lançamento Campanha</td>
+                                <td><span class="badge badge-planned">Planejado</span></td>
+                                <td>20/06/2026</td>
+                                <td>30/08/2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

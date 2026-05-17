@@ -1,0 +1,6 @@
+meuprojeto\repository\UsuarioRepository.class
+meuprojeto\service\UsuarioService.class
+meuprojeto\model\Usuario.class
+meuprojeto\controller\AdminController.class
+meuprojeto\MeuProjetoApplication.class
+meuprojeto\controller\UsuarioController.class

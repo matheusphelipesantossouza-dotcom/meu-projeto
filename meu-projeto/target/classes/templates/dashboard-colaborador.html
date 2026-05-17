@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Colaborador - GestãoPro</title>
+    <link rel="stylesheet" href="/css/colaborador.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-icon">📊</span>
+                    <h1>GestãoPro</h1>
+                </div>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="#dashboard" class="menu-item active">
+                    <span class="icon">📈</span>
+                    <span class="label">Dashboard</span>
+                </a>
+                <a href="#minhas-tarefas" class="menu-item">
+                    <span class="icon">📝</span>
+                    <span class="label">Minhas Tarefas</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#logout" class="menu-item logout">
+                    <span class="icon">🚪</span>
+                    <span class="label">Sair</span>
+                </a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="header-content">
+                    <h2>Bem-vindo</h2>
+                    <div class="user-info">
+                        <span class="user-avatar">👤</span>
+                        <span class="user-name">Colaborador</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="dashboard-content">
+                <section class="metrics-grid">
+                    <article class="metric-card">
+                        <div class="metric-icon">⏳</div>
+                        <div class="metric-details">
+                            <h3>Tarefas Pendentes</h3>
+                            <span class="metric-value">14</span>
+                        </div>
+                    </article>
+                    <article class="metric-card">
+                        <div class="metric-icon">🔄</div>
+                        <div class="metric-details">
+                            <h3>Tarefas Em Andamento</h3>
+                            <span class="metric-value">7</span>
+                        </div>
+                    </article>
+                    <article class="metric-card">
+                        <div class="metric-icon">✅</div>
+                        <div class="metric-details">
+                            <h3>Tarefas Concluídas</h3>
+                            <span class="metric-value">38</span>
+                        </div>
+                    </article>
+                    <article class="metric-card">
+                        <div class="metric-icon">📁</div>
+                        <div class="metric-details">
+                            <h3>Meus Projetos</h3>
+                            <span class="metric-value">5</span>
+                        </div>
+                    </article>
+                </section>
+
+                <section class="table-section">
+                    <h3>Minhas Tarefas</h3>
+                    <table class="projects-table">
+                        <thead>
+                            <tr>
+                                <th>Tarefa</th>
+                                <th>Projeto</th>
+                                <th>Prioridade</th>
+                                <th>Prazo</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Revisar proposta</td>
+                                <td>Portal de Vendas</td>
+                                <td>Alta</td>
+                                <td>22/05/2026</td>
+                                <td><span class="badge badge-in-progress">Em Andamento</span></td>
+                            </tr>
+                            <tr>
+                                <td>Atualizar planilha</td>
+                                <td>Relatório Financeiro</td>
+                                <td>Média</td>
+                                <td>28/05/2026</td>
+                                <td><span class="badge badge-pending">Pendente</span></td>
+                            </tr>
+                            <tr>
+                                <td>Testar nova função</td>
+                                <td>App Interno</td>
+                                <td>Alta</td>
+                                <td>30/05/2026</td>
+                                <td><span class="badge badge-in-progress">Em Andamento</span></td>
+                            </tr>
+                            <tr>
+                                <td>Enviar aprovação</td>
+                                <td>Campanha Marketing</td>
+                                <td>Baixa</td>
+                                <td>02/06/2026</td>
+                                <td><span class="badge badge-planned">Planejado</span></td>
+                            </tr>
+                            <tr>
+                                <td>Documentar processo</td>
+                                <td>Integração ERP</td>
+                                <td>Média</td>
+                                <td>18/05/2026</td>
+                                <td><span class="badge badge-completed">Concluído</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

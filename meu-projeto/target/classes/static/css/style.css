@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: linear-gradient(180deg, #eef3f8 0%, #ffffff 100%);
+    color: #1f2a37;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 520px;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 24px 80px rgba(31, 42, 55, 0.12);
+    padding: 36px;
+}
+
+.card-header {
+    margin-bottom: 32px;
+}
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #4a82d4;
+}
+
+.card-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #111827;
+}
+
+.card-header p {
+    margin: 14px 0 0;
+    color: #5b6778;
+    line-height: 1.6;
+}
+
+.form-grid {
+    display: grid;
+    gap: 18px;
+}
+
+.field-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.field-group input,
+.field-group select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d2dae8;
+    border-radius: 16px;
+    background: #f8fafc;
+    color: #0f172a;
+    font-size: 1rem;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.field-group input:focus,
+.field-group select:focus {
+    border-color: #4f74d8;
+    box-shadow: 0 0 0 4px rgba(79, 116, 216, 0.12);
+    outline: none;
+}
+
+.form-actions {
+    margin-top: 4px;
+    display: grid;
+    gap: 12px;
+}
+
+button {
+    width: 100%;
+    padding: 16px 18px;
+    border: none;
+    border-radius: 16px;
+    background: #334d92;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+    background: #2b4179;
+    transform: translateY(-1px);
+}
+
+.secondary-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 16px 18px;
+    border-radius: 16px;
+    border: 2px solid #334d92;
+    background: transparent;
+    color: #334d92;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.secondary-button:hover {
+    background: #334d92;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 560px) {
+    .card {
+        padding: 28px 20px;
+    }
+
+    .card-header h1 {
+        font-size: 1.75rem;
+    }
+}

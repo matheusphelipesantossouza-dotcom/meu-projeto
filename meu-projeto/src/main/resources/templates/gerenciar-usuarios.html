@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciar Usuários | GestãoPro</title>
+  <link rel="stylesheet" href="/css/dashboard-admin.css">
+  <link rel="stylesheet" href="/css/gerenciar-usuarios.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <span class="logo-icon">📊</span>
+      <span class="logo-text">GestãoPro</span>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="/admin/dashboard" class="nav-item">
+        <span class="nav-icon">📋</span> Dashboard
+      </a>
+      <a href="/admin/usuarios" class="nav-item active">
+        <span class="nav-icon">👥</span> Usuários
+      </a>
+      <a href="/admin/projetos" class="nav-item">
+        <span class="nav-icon">📁</span> Projetos
+      </a>
+      <a href="/admin/equipes" class="nav-item">
+        <span class="nav-icon">🤝</span> Equipes
+      </a>
+    </nav>
+    <a href="/logout" class="nav-item sair">
+      <span class="nav-icon">🚪</span> Sair
+    </a>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main">
+
+    <!-- Header -->
+    <header class="topbar">
+      <h1 class="page-title">Gerenciar Usuários</h1>
+      <div class="topbar-right">
+        <span class="perfil-badge">👤 Administrador</span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="content">
+
+      <!-- Barra de ações -->
+      <div class="actions-bar">
+        <input type="text" class="search-input" placeholder="🔍  Buscar por nome, e-mail ou cargo...">
+        <select class="filter-select">
+          <option value="">Todos os perfis</option>
+          <option value="ADMINISTRADOR">Administrador</option>
+          <option value="GERENTE">Gerente</option>
+          <option value="COLABORADOR">Colaborador</option>
+        </select>
+        <button class="btn-novo" onclick="abrirModal()">+ Novo Usuário</button>
+      </div>
+
+      <!-- Tabela -->
+      <div class="card">
+        <table class="tabela">
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>CPF</th>
+              <th>E-mail</th>
+              <th>Cargo</th>
+              <th>Perfil</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>João Silva</td>
+              <td>123.456.789-00</td>
+              <td>joao@empresa.com</td>
+              <td>Desenvolvedor</td>
+              <td><span class="badge badge-gerente">Gerente</span></td>
+              <td class="acoes">
+                <button class="btn-editar">✏️ Editar</button>
+                <button class="btn-excluir">🗑️ Excluir</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Maria Santos</td>
+              <td>987.654.321-00</td>
+              <td>maria@empresa.com</td>
+              <td>Analista</td>
+              <td><span class="badge badge-colaborador">Colaborador</span></td>
+              <td class="acoes">
+                <button class="btn-editar">✏️ Editar</button>
+                <button class="btn-excluir">🗑️ Excluir</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Carlos Oliveira</td>
+              <td>456.789.123-00</td>
+              <td>carlos@empresa.com</td>
+              <td>Designer</td>
+              <td><span class="badge badge-colaborador">Colaborador</span></td>
+              <td class="acoes">
+                <button class="btn-editar">✏️ Editar</button>
+                <button class="btn-excluir">🗑️ Excluir</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Ana Costa</td>
+              <td>321.654.987-00</td>
+              <td>ana@empresa.com</td>
+              <td>Gerente de TI</td>
+              <td><span class="badge badge-admin">Administrador</span></td>
+              <td class="acoes">
+                <button class="btn-editar">✏️ Editar</button>
+                <button class="btn-excluir">🗑️ Excluir</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Pedro Alves</td>
+              <td>654.321.098-00</td>
+              <td>pedro@empresa.com</td>
+              <td>Desenvolvedor</td>
+              <td><span class="badge badge-colaborador">Colaborador</span></td>
+              <td class="acoes">
+                <button class="btn-editar">✏️ Editar</button>
+                <button class="btn-excluir">🗑️ Excluir</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal Novo/Editar Usuário -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>Novo Usuário</h2>
+        <button class="modal-close" onclick="fecharModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nome completo</label>
+            <input type="text" placeholder="Digite o nome">
+          </div>
+          <div class="form-group">
+            <label>CPF</label>
+            <input type="text" placeholder="000.000.000-00">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" placeholder="email@empresa.com">
+          </div>
+          <div class="form-group">
+            <label>Cargo</label>
+            <input type="text" placeholder="Ex: Desenvolvedor">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Login</label>
+            <input type="text" placeholder="Digite o login">
+          </div>
+          <div class="form-group">
+            <label>Perfil de acesso</label>
+            <select>
+              <option value="">Selecione...</option>
+              <option value="ADMINISTRADOR">Administrador</option>
+              <option value="GERENTE">Gerente</option>
+              <option value="COLABORADOR">Colaborador</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Senha</label>
+            <input type="password" placeholder="Digite a senha">
+          </div>
+          <div class="form-group">
+            <label>Confirmar senha</label>
+            <input type="password" placeholder="Repita a senha">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-cancelar" onclick="fecharModal()">Cancelar</button>
+        <button class="btn-salvar">Salvar</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function abrirModal() {
+      document.getElementById('modalOverlay').classList.add('ativo');
+    }
+    function fecharModal() {
+      document.getElementById('modalOverlay').classList.remove('ativo');
+    }
+  </script>
+
+</body>
+</html>

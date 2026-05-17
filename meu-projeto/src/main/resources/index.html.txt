@@ -1,0 +1,23 @@
+ primeiro site</h1>
+    </header>
+    <main>
+        <p>aqui voce ira fazer o cadastro ou login para poder acessar nosso site</p>
+   
+   
+    <form action="" class="form1">
+     <div><label for="">digite seu gmail</label>
+     <input type="text" placeholder="">
+    </div>
+    
+
+   <div>
+    <label for="">digite sua senha</label>
+     <input type="text">  
+     
+       </div>
+          <button>login</button>
+   </form>
+   </main>
+ <footer><a href="https://www.youtube.com/watch?v=Pspfs8DzSzU">faça seu cadastro no nosso site</a></footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - GestãoPro</title>
+    <link rel="stylesheet" href="/css/dashboard-admin.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <span class="logo-icon">📊</span>
+                    <h1>GestãoPro</h1>
+                </div>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="/admin/dashboard" class="menu-item active">
+                    <span class="icon">📈</span>
+                    <span class="label">Dashboard</span>
+                </a>
+                <a href="/admin/usuarios" class="menu-item">
+                    <span class="icon">👥</span>
+                    <span class="label">Usuários</span>
+                </a>
+                <a href="/admin/projetos" class="menu-item">
+                    <span class="icon">📁</span>
+                    <span class="label">Projetos</span>
+                </a>
+                <a href="/admin/equipes" class="menu-item">
+                    <span class="icon">🤝</span>
+                    <span class="label">Equipes</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="/logout" class="menu-item logout">
+                    <span class="icon">🚪</span>
+                    <span class="label">Sair</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-content">
+                    <h2>Bem-vindo, Admin</h2>
+                    <div class="user-info">
+                        <span class="user-avatar">👤</span>
+                        <span class="user-name">Administrador</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <section class="dashboard-content">
+                <!-- Metrics Cards -->
+                <section class="metrics-grid">
+                    <article class="metric-card">
+                        <div class="metric-icon">👥</div>
+                        <div class="metric-details">
+                            <h3>Total de Usuários</h3>
+                            <span class="metric-value">147</span>
+                        </div>
+                    </article>
+
+                    <article class="metric-card">
+                        <div class="metric-icon">📁</div>
+                        <div class="metric-details">
+                            <h3>Total de Projetos</h3>
+                            <span class="metric-value">32</span>
+                        </div>
+                    </article>
+
+                    <article class="metric-card">
+                        <div class="metric-icon">⚙️</div>
+                        <div class="metric-details">
+                            <h3>Projetos em Andamento</h3>
+                            <span class="metric-value">18</span>
+                        </div>
+                    </article>
+
+                    <article class="metric-card">
+                        <div class="metric-icon">🤝</div>
+                        <div class="metric-details">
+                            <h3>Equipes Ativas</h3>
+                            <span class="metric-value">8</span>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- Projects Table -->
+                <section class="table-section">
+                    <h3>Últimos Projetos</h3>
+                    <table class="projects-table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
